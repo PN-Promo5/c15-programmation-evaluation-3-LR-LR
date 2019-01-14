@@ -28,10 +28,11 @@ function displayInterface() {
     button.style.display="none";
 
     // display the table
-    createHTMLTable(films);
+    document.body.appendChild(createHTMLTable(films));
   }, false);
 }
 
+displayInterface();
 
 // 1.2
 // array that contains the films
